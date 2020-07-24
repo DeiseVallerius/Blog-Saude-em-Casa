@@ -40,6 +40,20 @@ function showComment() {
     var comment = comments[i].comment;
 
     commentsResult.innerHTML +=
+      `
+          <div class="container col-6 ">
+              
+                  <h4 >${name}</h4>
+                  <h5 class="text-muted">${hour}</h5><br>    
+          </div>
+      ` +
+      `  <div class="container col-6   text-dark">  
+  <textarea class="form-control" id="comment" rows="3">${comment}</textarea>
+</div><br><br>
+`;
+  }
+
+  /*commentsResult.innerHTML +=
       "<tr><td>" +
       name +
       "</td><td>" +
@@ -51,5 +65,5 @@ function showComment() {
       "</td><td>" +
       comment +
       "</tr>";
-  }
+  }*/
 }
