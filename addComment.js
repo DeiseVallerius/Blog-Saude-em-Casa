@@ -10,8 +10,7 @@ function addComment() {
     comment,
     name,
     email,
-    hour: time.getHours(),
-    minute: time.getMinutes(),
+    hour: time.toLocaleString(),
   };
 
   if (localStorage.getItem("newComment") === null) {

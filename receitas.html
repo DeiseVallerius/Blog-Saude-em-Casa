@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Usado para responsividade-->
         <title>Saúde em Casa</title>
+        <link rel="shortcut icon" href="public/img/logo.jpg">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap" rel="stylesheet"> -->
@@ -146,30 +147,28 @@
                 </section>
 
                 <!--DEIXE SEU COMENTÁRIO-->
-                <section class="container bg-light text-center ">
-                    <div class="row">
-                        <form id="addComment">
-                            <div class="form-group  p-5 ">
-                                <div class="form-group">
+                <section class="container bg-light text-center col-4 p-5">
 
-                                    <label for="exampleFormControlTextarea1">Deixe o seu comentário</label>
-                                    <textarea class="form-control" id="comment" rows="3"></textarea>
-                                </div>
+                    <form id="addComment">
+                        <div class="form-group  p-5 ">
+                            <div class="form-group">
 
-                                <div class="form-group">
-                                    <label for="name">Nome</label>
-                                    <input type="text" class="form-control" id="name" required="required">
-                                </div>
-
-                                <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <h4>Deixe o seu comentário</h4><br>
+                                <textarea class="form-control" id="comment" rows="3" required="required"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Postar comentário</button>
-                        </form>
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" class="form-control" id="name" required="required">
+                            </div>
 
-                    </div>
+                            <label for="exampleInputEmail1">E-mail</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="required">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Postar comentário</button>
+                    </form>
 
                 </section>
 
